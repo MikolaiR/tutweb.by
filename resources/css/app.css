@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'custom.css';
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-amber-700 bg-amber-100 hover:bg-amber-200;
+    }
+
+    .form-label {
+        @apply block text-sm font-medium text-gray-700;
+    }
+
+    .form-input {
+        @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm;
+    }
+
+    .form-error {
+        @apply mt-2 text-sm text-red-600;
+    }
+
+    .page-header {
+        @apply text-3xl font-extrabold text-gray-900 sm:text-4xl;
+    }
+
+    .section-header {
+        @apply text-2xl font-bold text-gray-900;
+    }
+
+    .card {
+        @apply bg-white rounded-lg shadow-lg overflow-hidden;
+    }
+}
